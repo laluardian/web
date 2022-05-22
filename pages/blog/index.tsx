@@ -16,6 +16,7 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPostProps[] }) {
     >
       <h1>Blog</h1>
       <p className="mb-6">This is where I share random stuff I managed to write.</p>
+      {!blogPosts && <p className="text-gray-700">There is no blog post found ~</p>}
       {blogPosts && (
         <ul className="ml-[1.3rem] list-[square]">
           {blogPosts.map(({ slug, frontmatter }) => {
@@ -29,7 +30,6 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPostProps[] }) {
           })}
         </ul>
       )}
-      {!blogPosts && <p className="text-gray-700">No blog post yet ~</p>}
     </Container>
   )
 }
