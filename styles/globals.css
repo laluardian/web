@@ -11,9 +11,9 @@
 }
 
 p a {
-  @apply font-semibold underline
+  @apply font-semibold underline;
 }
 
 h1 {
-  @apply mb-4 text-3xl sm:text-4xl font-extrabold md:text-5xl
+  @apply mb-4 text-3xl sm:text-4xl font-extrabold md:text-5xl;
 }
