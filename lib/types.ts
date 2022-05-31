@@ -1,7 +1,7 @@
 import type { GetStaticPropsContext } from 'next'
 import type { ParsedUrlQuery } from 'querystring'
 import type { AnchorHTMLAttributes, ReactNode } from 'react'
-import { Url } from 'url'
+import type { Url } from 'url'
 
 type BlogPostProps = {
   frontmatter: { [key: string]: any }
