@@ -23,15 +23,15 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPostProps[] }) {
             return (
               <li key={slug} className="mb-4 text-xl font-semibold hover:underline sm:text-2xl">
                 <Link href={`/blog/${slug}`}>
-                  <a>{frontmatter.title}</a>
+                  {frontmatter.title}
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       )}
     </Container>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = () => {

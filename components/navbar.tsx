@@ -18,21 +18,21 @@ const Navbar = () => {
         {navbarLinksMeta.map(({ href, children }) => {
           return (
             <li key={href}>
-              <Link href={href}>
-                <a
-                  className={clsx('inline-block rounded-md py-2 px-3 hover:bg-gray-200', {
-                    'font-semibold': href === currentPath,
-                  })}
-                >
-                  {children}
-                </a>
+              <Link
+                href={href}
+                className={clsx('inline-block rounded-md py-2 px-3 hover:bg-gray-200', {
+                  'font-semibold': href === currentPath,
+                })}>
+
+                {children}
+
               </Link>
             </li>
-          )
+          );
         })}
       </ul>
     </nav>
-  )
+  );
 }
 
 export default Navbar
