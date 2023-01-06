@@ -38,9 +38,9 @@ export default function Home() {
           <h1>Lalu Ahmad Ardiansyah</h1>
           <h2 className="mb-2 text-gray-700">Full-stack Developer</h2>
           <p className="mb-4">
-            Based in Lombok, Indonesia. <span className="font-semibold">Specializing</span> in
-            building web applications using modern tools and technologies such as TypeScript, React,
-            Node.js, Go, MongoDB, PostgreSQL, Docker, etc.
+            Based in Lombok, Indonesia. Specializes in building web applications using modern tools
+            and technologies such as TypeScript, React, Node.js, Go, MongoDB, PostgreSQL, Docker,
+            etc.
           </p>
           <ul className="flex gap-4">
             {socialMediaLinksMeta.map(linkMeta => (

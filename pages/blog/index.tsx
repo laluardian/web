@@ -11,27 +11,25 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPostProps[] }) {
       additionalMetadata={{
         title: 'Blog - Lalu Ahmad Ardiansyah',
         description:
-          'Random stuff I managed to write. Mostly about web development and programming in general.',
+          'Random stuff that I managed to write. Mostly about web development and programming in general.',
       }}
     >
       <h1>Blog</h1>
-      <p className="mb-6">This is where I share random stuff I managed to write.</p>
+      <p className="mb-6">This is where I share random stuff that I managed to write.</p>
       {!blogPosts && <p className="text-gray-700">There is no blog post found ~</p>}
       {blogPosts && (
         <ul className="ml-[1.3rem] list-[square]">
           {blogPosts.map(({ slug, frontmatter }) => {
             return (
               <li key={slug} className="mb-4 text-xl font-semibold hover:underline sm:text-2xl">
-                <Link href={`/blog/${slug}`}>
-                  {frontmatter.title}
-                </Link>
+                <Link href={`/blog/${slug}`}>{frontmatter.title}</Link>
               </li>
-            );
+            )
           })}
         </ul>
       )}
     </Container>
-  );
+  )
 }
 
 export const getStaticProps: GetStaticProps = () => {

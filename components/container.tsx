@@ -13,7 +13,7 @@ const Container = ({ children, additionalMetadata }: ContainerProps) => {
   const meta = {
     title: 'Lalu Ahmad Ardiansyah',
     description:
-      'A full-stack developer based in Lombok, Indonesia. Specializing in building ' +
+      'A full-stack developer based in Lombok, Indonesia. Specializes in building ' +
       'web applications using modern tools and technologies such as TypeScript, ' +
       'React, Node.js, Go, MongoDB, PostgreSQL, Docker, etc.',
     type: 'website',
