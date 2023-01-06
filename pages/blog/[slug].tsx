@@ -17,7 +17,6 @@ export default function BlogPost({ frontmatter, content }: BlogPostProps) {
     <Container
       additionalMetadata={{
         title: `${frontmatter.title} - Lalu Ahmad Ardiansyah`,
-        localStyles: 'https://unpkg.com/prism-themes@1.6.0/themes/prism-ghcolors.css',
       }}
     >
       <article className="prose">
